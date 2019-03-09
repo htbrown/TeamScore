@@ -1,0 +1,59 @@
+@import "/columns.css";
+
+body {
+    background-color: #303030;
+    color: white;
+    /*overflow: hidden; */
+    font-family: 'Overpass', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.teams {
+    text-align: center;
+    background-color: #464646;
+    margin: 10px;
+    width: 1005px;
+    height: 480px;
+    border-style: none;
+    border-color: #464646;
+    border-width: 2px;
+    border-radius: 5px;
+}
+
+.team {
+    padding: 25px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.topbar {
+    -webkit-app-region: drag;
+    height: 20px;
+    width: 1024px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+button {
+    text-align: center;
+    width: 60px;
+    height: 30px;
+    margin: 2.5px;
+    vertical-align: top;
+    background-color: #303030;
+    transition: all .2s;
+    border-color: #303030;
+    border-width: 2px;
+    border-radius: 5px;
+    color: white;
+}
+
+button:hover {
+    background-color: #212121;
+    border-color: #212121;
+}

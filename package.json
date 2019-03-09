@@ -1,0 +1,15 @@
+{
+  "name": "teamscore",
+  "version": "1.0.0",
+  "description": "A simple scoring application for 2 teams. Made with Vuejs and Electron",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hayden Brown",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "bulma": "^0.7.4",
+    "electron": "^4.0.8"
+  }
+}

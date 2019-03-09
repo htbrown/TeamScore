@@ -1,0 +1,58 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TeamScore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/columns.css">
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+</head>
+
+<body style="background-color: #464646 !important; text-align: center;">
+    <div class="columns">
+        <div class="column">
+            <h3>Team 1</h3>
+            <div id="team1" class="team">
+                <button v-on:click="number +=10">+10</button>
+                <br>
+                <button v-on:click="number +=5">+5</button>
+                <br>
+                <button style="margin-left:-1.5px;" v-on:click="number +=1">+1</button>
+                <h3>{{ number }}</h3>
+                <button v-on:click="number -=1">-1</button>
+                <br>
+                <button v-on:click="number -=5">-5</button>
+                <br>
+                <button v-on:click="number -=10">-10</button>
+                <br>
+                <button style="margin-left:-1.5px;" v-on:click="number = 0">Reset</button>
+            </div>
+        </div>
+        <div class="column">
+            <h3>Team 2</h3>
+            <div id="team2" class="team">
+                <button v-on:click="number +=10">+10</button>
+                <br>
+                <button v-on:click="number +=5">+5</button>
+                <br>
+                <button style="margin-left:-1.5px;" v-on:click="number +=1">+1</button>
+                <h3>{{ number }}</h3>
+                <button v-on:click="number -=1">-1</button>
+                <br>
+                <button v-on:click="number -=5">-5</button>
+                <br>
+                <button v-on:click="number -=10">-10</button>
+                <br>
+                <button style="margin-left:-1.5px;" v-on:click="number = 0">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
