@@ -1,8 +1,8 @@
-const {app, BrowserWindow} = require('electron');
+const { app, BrowserWindow } = require('electron');
 
-var win;
+let win;
 
-function createWindow(width, height, options) {
+async function createWindow(width, height, options) {
     win = new BrowserWindow({
         width: width,
         height: height,
@@ -10,13 +10,13 @@ function createWindow(width, height, options) {
         resizable: false
     });
 
-    win.loadFile('assets/index.html');
+    await win.loadFile('assets/index.html');
 
-    win.on('closed', () => {
+    win.on('closed', async () => {
         win = null;
     })
 };
 
-app.on('ready', () => {
-    createWindow(1024, 600);
+app.on('ready', async () => {
+    await createWindow(1024, 600);
 });
